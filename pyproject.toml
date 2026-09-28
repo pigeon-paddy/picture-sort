@@ -1,15 +1,11 @@
 [project]
 name = "picture-sort"
 version = "0.1.0"
-description = "Add your description here"
+description = "Select files via md and copy them to a child-folder."
 readme = "README.md"
-authors = [
-    { name = "pigeon-paddy", email = "pxxdy1267@gmail.com" }
-]
+authors = [{ name = "pigeon-paddy", email = "pxxdy1267@gmail.com" }]
 requires-python = ">=3.14"
-dependencies = [
-    "questionary>=2.1.1",
-]
+dependencies = ["questionary>=2.1.1"]
 
 [project.scripts]
 picture-sort = "picture_sort:main"

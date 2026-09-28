@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from picture-sort!")
+from .picture_sort import main
