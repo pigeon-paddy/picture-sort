@@ -1,0 +1,19 @@
+[project]
+name = "picture-sort"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pigeon-paddy", email = "pxxdy1267@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "questionary>=2.1.1",
+]
+
+[project.scripts]
+picture-sort = "picture_sort:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
