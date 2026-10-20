@@ -3,20 +3,24 @@ This minimal algorithm takes a md-file and a directory of files and copies the l
 
 - select directories via arrow-keys
 - autocompletes filenames
+- creates subdirectory for every markdown- heading
 - verifies integrity
 
 
 ## Use-case
-Writing md files instead of manually deleting files and let the Algorithm securely store your most important files.
+Writing markdown instead of manually deleting files and let the Algorithm securely copy your most important files.
 
 ## Markdown-example
 ```md
-# Location 1
+1056/15/45/89
+2556/68/72/73/74/98
+
+# Subfolder 1
 7645/46/52/57/67/68/78/86/91/
 7742/58/62/65/
 7810/16/22/29/34/45/49/
 
-# Location 2
+# Subfolder 2
 9279/84/87/
 9301/04/
 ```
