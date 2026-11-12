@@ -46,3 +46,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```bash
 uv run main.py
 ```
+
+
+## ToDo
+Add absolute export Path
