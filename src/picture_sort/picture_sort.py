@@ -336,7 +336,8 @@ def initFolder(BASE_PATH):
 def main():
     SMB_PATH = Path("Z:/")
     CLOUD_PATH = Path(r"G:\Nextcloud")
-    EXTERNAL_PATH = Path(r"F:\backup")
+    WSL_PATH = Path(r"/mnt/z/")
+    EXTERNAL_PATH = Path(r"")
 
     # Adjust these paths for your machines.
     if SMB_PATH.exists():
@@ -345,6 +346,9 @@ def main():
     elif CLOUD_PATH.exists():
         BASE_PATH = CLOUD_PATH
         print("Using Nextcloud path.")
+    elif WSL_PATH.exists():
+            BASE_PATH = WSL_PATH
+            print("Using WSL path.")
     else:
         print("ERROR: Neither configured base path is available.")
         print(f"  SMB:   {SMB_PATH}")
@@ -352,8 +356,8 @@ def main():
         return
 
     MK_PATH = BASE_PATH / "Documents" / "Cloud" / "Notes" / "Galaxy"
-    # PICTURE_PATH = BASE_PATH / "Data" / "Awayfromfalling"
-    PICTURE_PATH = EXTERNAL_PATH
+    PICTURE_PATH = BASE_PATH / "Data" / "Awayfromfalling"
+    # PICTURE_PATH = EXTERNAL_PATH
 
     print(
         f"Base path:     {BASE_PATH}\n"
